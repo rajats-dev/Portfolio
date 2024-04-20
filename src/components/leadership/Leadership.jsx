@@ -1,22 +1,14 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { AiFillLeftCircle, AiFillRightCircle } from "react-icons/ai";
-
-const images = [
-  "image1.png",
-  "image2.png",
-  "image3.png",
-  "image4.png",
-  "image5.png",
-  "image6.png",
-  "image7.png",
-];
+import { images } from "../../data";
+import classes from "./leadership.module.css";
 
 const Leadership = () => {
   const [count, setCount] = useState(0);
   return (
     <>
-      <div className=" flex flex-col items-center">
+      <div className={`flex flex-col items-center ${classes.leader}`}>
         <h1 className="text-5xl m-7">Leadership</h1>
         <div className="relative h-[25rem] object-center rounded-lg mt-8 mb-8 flex items-center">
           {images.map((item, i) => (
@@ -27,7 +19,7 @@ const Leadership = () => {
               width={900}
               height={900}
               style={{ display: `${count === i ? "block" : "none"}` }}
-              className="shadow-2xl"
+              className={`shadow-2xl ${classes.img}`}
             />
           ))}
           <span className="text-4xl">

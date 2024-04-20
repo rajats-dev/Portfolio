@@ -1,0 +1,43 @@
+@media screen and (max-width: 1300px) {
+  .spans {
+    gap: 10rem;
+  }
+  .img {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .spans {
+    gap: 4rem;
+  }
+
+  .img {
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  .experience > h1 {
+    font-size: x-large;
+  }
+  .spans {
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .img {
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .spans h2 {
+    font-size: smaller;
+  }
+  .spans p {
+    font-size: smaller;
+  }
+  .spans span {
+    gap: 5px;
+  }
+}

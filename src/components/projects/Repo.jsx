@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
+import classes from "./project.module.css";
 
 const Repo = ({ data }) => {
   return (
@@ -7,7 +8,7 @@ const Repo = ({ data }) => {
       {data.map((repo, i) => (
         <div
           key={i}
-          className="flex flex-col gap-3 w-[40%] bg-white p-4 rounded-lg h-52 shadow-2xl"
+          className={`flex flex-col gap-3 w-[40%] bg-white p-4 rounded-lg h-52 shadow-2xl ${classes.repo}`}
         >
           <h2 className="text-md font-bold">{repo.name}</h2>
           <span className="flex gap-4 opacity-95">

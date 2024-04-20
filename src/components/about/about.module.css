@@ -1,0 +1,49 @@
+/*============= Responsive Design ===============*/
+
+@media screen and (max-width: 1300px) {
+  .about p {
+    width: 30rem;
+  }
+  .image {
+    width: 22rem;
+    height: 22rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .about p {
+    width: 20rem;
+  }
+  .image {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  .about p {
+    font-size: small;
+    width: 15rem;
+  }
+  .about h1 {
+    font-size: x-large;
+  }
+  .image {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+@media screen and (max-width: 649px) {
+  .about {
+    height: 20rem;
+  }
+  .about p {
+    font-size: small;
+    width: 25rem;
+  }
+  .about h1 {
+    font-size: x-large;
+  }
+  .image {
+    display: none;
+  }
+}

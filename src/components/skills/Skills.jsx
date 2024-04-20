@@ -1,14 +1,20 @@
 import React, { useState } from "react";
 import TechnicalSkill from "./TechnicalSkill";
 import SoftSkill from "./SoftSkill";
+import classes from "./skills.module.css";
 
 const Skills = ({ id }) => {
   const [section, setSection] = useState(false);
   return (
     <>
-      <div className="flex flex-col items-center h-[33rem] w-full" id={id}>
+      <div
+        className={`flex flex-col items-center h-[33rem] w-full ${classes.skill}`}
+        id={id}
+      >
         <h1 className="text-5xl m-10 mb-14">Skills</h1>
-        <div className="flex text-md justify-around w-[55rem] h-14 mb-10">
+        <div
+          className={`flex text-md justify-around w-[55rem] h-14 mb-10 ${classes.button}`}
+        >
           <button
             onClick={() => setSection(false)}
             className={`${

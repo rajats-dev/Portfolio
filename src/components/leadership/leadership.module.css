@@ -1,0 +1,32 @@
+@media screen and (max-width: 1300px) {
+  .leader p {
+    font-size: large;
+  }
+  .img {
+    width: 45rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .leader p {
+    font-size: medium;
+  }
+  .img {
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  .leader p {
+    font-size: small;
+  }
+  .leader h1 {
+    font-size: x-large;
+  }
+
+  .leader > div {
+    height: 15rem;
+  }
+  .img {
+    width: 25rem;
+  }
+}

@@ -1,0 +1,39 @@
+@media screen and (max-width: 1300px) {
+  .skill {
+    height: 45rem;
+  }
+  .skill h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .progress {
+    width: 50rem;
+  }
+  .button {
+    width: 50rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .skill h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .progress {
+    width: 35rem;
+  }
+  .button {
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  .skill > h1 {
+    font-size: x-large;
+  }
+  .progress {
+    width: 25rem;
+  }
+  .button {
+    width: 25rem;
+  }
+}

@@ -1,0 +1,19 @@
+@media screen and (max-width: 1050px) {
+  .contact > p {
+    font-size: medium;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  .contact > h1 {
+    font-size: x-large;
+  }
+  .spans {
+    gap: 3rem;
+  }
+
+  .img {
+    width: 8rem;
+  }
+}

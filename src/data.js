@@ -5,6 +5,8 @@ export const progress = [
   { lang: "HTML/CSS", per: "79%" },
   { lang: "TypeScript", per: "78%" },
   { lang: "SQL", per: "76%" },
+  { lang: "Tailwind", per: "86%" },
+  { lang: "GitHub", per: "74%" },
 ];
 
 export const softProgress = [
@@ -30,4 +32,14 @@ export const urlsLang = [
   "https://api.github.com/repos/rajats-dev/ecomm-app/languages",
   "https://api.github.com/repos/rajats-dev/expense-tracker/languages",
   "https://api.github.com/repos/rajats-dev/youtube-clone/languages",
+];
+
+export const images = [
+  "image1.png",
+  "image2.png",
+  "image3.png",
+  "image4.png",
+  "image5.png",
+  "image6.png",
+  "image7.png",
 ];

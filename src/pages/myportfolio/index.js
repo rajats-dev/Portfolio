@@ -1,13 +1,14 @@
-import About from "@/components/About";
-import Contact from "@/components/Contact";
-import Experience from "@/components/Experience";
+import About from "@/components/about/About";
+import Contact from "@/components/contact/Contact";
+import Experience from "@/components/experience/Experience";
 import Header from "@/components/Header";
 import HomeDash from "@/components/home/HomeDash";
-import Leadership from "@/components/Leadership";
+import Leadership from "@/components/leadership/Leadership";
 import Projects from "@/components/projects/Projects";
 import Skills from "@/components/skills/Skills";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import classes from "../../styles/index.module.css";
 
 const index = () => {
   const router = useRouter();

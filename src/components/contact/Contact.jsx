@@ -1,11 +1,14 @@
 import { AiFillHeart } from "react-icons/ai";
 import { PiBracketsAngleLight } from "react-icons/pi";
 import { LiaReact } from "react-icons/lia";
+import classes from "./contact.module.css";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center h-[17rem] w-full bg-[#e8ecef]">
-      <h1 className="text-5xl m-7">About Me</h1>
+    <div
+      className={`flex flex-col items-center h-[17rem] w-full bg-[#e8ecef] ${classes.contact}`}
+    >
+      <h1 className="text-5xl m-7">Get In Touch</h1>
       <p className="w-[70%] text-center mb-8 text-lg">
         I'm currently looking for full-time React Developer/Frontend Developer
         opportunities! If you know of any positions available, if you have any

@@ -1,36 +1,8 @@
-.floatingContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vh;
-  height: 100vh;
-  overflow: hidden;
-  pointer-events: none; /* Allow clicks to pass through dots */
-  z-index: 999;
-}
+/*============= Responsive Design ===============*/
 
-.bubble {
-  position: relative;
-  display: flex;
-}
-
-.dot {
-  position: relative;
-  background-color: #be1818;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  animation: float 6s infinite linear; /* Adjust animation duration as needed */
-}
-
-/* Keyframe animation for floating effect */
-@keyframes float {
-  0% {
-    transform: translateY(100vh);
-    opacity: 0; /* Start with dots invisible */
+/* @media screen and (max-width: 950px) {
+  .main {
+    /* width: 70%; 
   }
-  100% {
-    transform: translateY(-100vh);
-    opacity: 1; /* End with dots fully visible */
-  }
-}
+} 
+*/

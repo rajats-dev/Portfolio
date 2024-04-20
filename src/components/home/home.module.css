@@ -20,3 +20,21 @@
     0% 0% / 1200% 1200%;
   animation: gradientAnimation 10s ease infinite alternate;
 }
+
+/*============= Responsive Design ===============*/
+
+@media screen and (max-width: 1300px) {
+  .home h1 {
+    font-size: 8rem;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .home h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 749px) {
+  .home h1 {
+    font-size: 3rem;
+  }
+}
