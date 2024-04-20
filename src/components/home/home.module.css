@@ -1,0 +1,22 @@
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.home {
+  background: linear-gradient(
+      136deg,
+      rgb(68, 132, 206),
+      rgb(26, 215, 192),
+      rgb(255, 155, 17),
+      rgb(155, 89, 182),
+      rgb(255, 127, 127),
+      rgb(236, 240, 241)
+    )
+    0% 0% / 1200% 1200%;
+  animation: gradientAnimation 10s ease infinite alternate;
+}
