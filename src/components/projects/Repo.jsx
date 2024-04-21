@@ -28,7 +28,9 @@ const Repo = ({ data }) => {
             </a>
           </span>
           <hr></hr>
-          <ul className="flex gap-3 font-bold text-xs items-center">
+          <ul
+            className={`flex gap-3 font-bold text-xs items-center ${classes.lang}`}
+          >
             Languages:
             <li className="bg-[#eaebec] p-1 rounded-lg">
               JavaScript: {repo.lang.javaScript}%

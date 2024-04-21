@@ -17,4 +17,29 @@
   .project > h1 {
     font-size: x-large;
   }
+  .repo {
+    position: relative;
+    left: 1rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .project {
+    height: 65rem;
+  }
+  .project > div {
+    align-items: center;
+  }
+  .repo {
+    width: 75%;
+    height: 12rem;
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .repo {
+    position: relative;
+    left: 1rem;
+  }
 }

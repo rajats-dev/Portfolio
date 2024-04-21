@@ -57,3 +57,28 @@
     font-size: 3rem;
   }
 }
+
+@media screen and (max-width: 460px) {
+  .home {
+    left: 4rem;
+  }
+
+  .home h1,
+  .home p,
+  .home a {
+    position: relative;
+    left: 1rem;
+  }
+  .home h1 {
+    font-size: 2rem;
+  }
+  .home p {
+    font-size: x-small;
+  }
+  .home a {
+    font-size: xx-large;
+  }
+  .home button {
+    font-size: large;
+  }
+}

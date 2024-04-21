@@ -11,7 +11,7 @@ const Projects = ({ id }) => {
       id={id}
     >
       <h1 className="text-5xl m-7">Recent Projects</h1>
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap items-center justify-center gap-8">
         <Repo data={repoObj} />
       </div>
     </div>

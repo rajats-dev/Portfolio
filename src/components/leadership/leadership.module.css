@@ -30,3 +30,16 @@
     width: 25rem;
   }
 }
+
+@media screen and (max-width: 460px) {
+  .leader > div {
+    left: 1rem;
+  }
+  .leader > p {
+    position: relative;
+    left: 24px;
+  }
+  .img {
+    width: 20rem;
+  }
+}

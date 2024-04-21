@@ -49,3 +49,12 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 460px) {
+  .about p {
+    font-size: x-small;
+    width: 20rem;
+    position: relative;
+    left: 1rem;
+  }
+}
