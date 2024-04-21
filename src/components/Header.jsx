@@ -26,7 +26,6 @@ const Header = ({ handleNavigation }) => {
     };
   }, []);
 
-  console.log(scrolled);
   return (
     <>
       <div

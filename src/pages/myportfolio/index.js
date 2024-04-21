@@ -7,7 +7,6 @@ import Leadership from "@/components/leadership/Leadership";
 import Projects from "@/components/projects/Projects";
 import Skills from "@/components/skills/Skills";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 
 const index = () => {
   const router = useRouter();
@@ -15,23 +14,6 @@ const index = () => {
   const handleLinkClick = (path) => {
     router.push(`/myportfolio/#${path}`);
   };
-
-  useEffect(() => {
-    const stars = () => {
-      let e = document.createElement("div");
-      e.setAttribute("class", "star");
-      document.body.appendChild(e);
-      e.style.left = Math.random() * innerWidth + "px";
-
-      setTimeout(() => {
-        document.body.removeChild(e);
-      }, 5000);
-    };
-
-    setInterval(() => {
-      stars();
-    }, 100);
-  }, []);
 
   return (
     <>
