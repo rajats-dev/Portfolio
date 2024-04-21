@@ -26,16 +26,17 @@ const Header = ({ handleNavigation }) => {
     };
   }, []);
 
+  console.log(scrolled);
   return (
     <>
       <div
-        className={`flex ${
+        className={`flex "bg-transparent" ${
           phoneActive && showModel
-            ? "pt-5 mt-0 bg-slate-200 opacity-85 h-52"
+            ? "pt-5 mt-0 bg-slate-100 opacity-85 h-52"
             : "pt-1 items-center"
-        } w-full z-20 ${
-          scrolled ? "bg-slate-100" : "bg-transparent"
-        } hover:cursor-pointer ${phoneActive && !showModel && "h-16"}`}
+        } w-full z-20 ${scrolled && "bg-slate-100"} hover:cursor-pointer ${
+          phoneActive && !showModel && "h-16"
+        }`}
       >
         <h1
           className="text-2xl font-bold ml-7"
@@ -50,7 +51,7 @@ const Header = ({ handleNavigation }) => {
               ? {
                   position: "fixed",
                   top: showModel ? "1rem" : "-20rem",
-                  transition: "all 0.5s",
+                  transition: "all 0.3s",
                   marginTop: "3rem",
                   display: "flex",
                   flexDirection: "column",

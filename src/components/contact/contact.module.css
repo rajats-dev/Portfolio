@@ -6,6 +6,9 @@
 }
 
 @media screen and (max-width: 779px) {
+  .contact {
+    height: 20rem;
+  }
   .contact > h1 {
     font-size: x-large;
   }

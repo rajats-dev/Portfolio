@@ -37,3 +37,11 @@
     width: 25rem;
   }
 }
+@media screen and (max-width: 520px) {
+  .progress {
+    width: 22rem;
+  }
+  .button {
+    width: 22rem;
+  }
+}

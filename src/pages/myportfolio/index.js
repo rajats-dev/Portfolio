@@ -35,10 +35,12 @@ const index = () => {
 
   return (
     <>
-      <div className="relative">
-        <nav className="fixed left-0 right-0">
-          <Header handleNavigation={handleLinkClick} />
-        </nav>
+      <div className="flex flex-col items-center">
+        <div className="relative">
+          <nav className="fixed left-0 right-0">
+            <Header handleNavigation={handleLinkClick} />
+          </nav>
+        </div>
         <main>
           <HomeDash id="home" />
           <About id="about" />
@@ -46,10 +48,9 @@ const index = () => {
           <Projects id="project" />
           <Leadership />
           <Skills id="skills" />
-        </main>
-        <footer>
           <Contact />
-        </footer>
+        </main>
+        <footer></footer>
       </div>
     </>
   );
