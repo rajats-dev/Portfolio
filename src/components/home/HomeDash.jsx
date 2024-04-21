@@ -39,7 +39,6 @@ const HomeDash = ({ id }) => {
             More About Me
           </button>
         </Link>
-        {/* <div id={style.stars}></div> */}
       </div>
     </>
   );

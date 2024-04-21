@@ -22,6 +22,7 @@
 @media screen and (max-width: 779px) {
   .about p {
     font-size: small;
+    text-align: center;
     width: 15rem;
   }
   .about h1 {
@@ -38,6 +39,7 @@
   }
   .about p {
     font-size: small;
+    text-align: center;
     width: 25rem;
   }
   .about h1 {

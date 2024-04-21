@@ -1,28 +1,41 @@
 import React, { useEffect, useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = ({ handleNavigation }) => {
   const [scrolled, setScrolled] = useState(false);
+  const [showModel, setShowModel] = useState(false);
+  const [phoneActive, setPhoneActive] = useState(false);
+
+  const resizeHandler = () => {
+    setPhoneActive(window.innerWidth < 900);
+  };
+
+  const handleScroll = () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const isScrolled = scrollTop > 20 * 40;
+    setScrolled(isScrolled);
+  };
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = document.documentElement.scrollTop;
-      const isScrolled = scrollTop > 20 * 40;
-      setScrolled(isScrolled);
-    };
-
     window.addEventListener("scroll", handleScroll);
-
+    window.addEventListener("resize", resizeHandler);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", resizeHandler);
+      setPhoneActive(window.innerWidth < 900);
     };
   }, []);
 
   return (
     <>
       <div
-        className={`flex items-center w-full z-20 ${
+        className={`flex ${
+          phoneActive && showModel
+            ? "pt-5 mt-0 bg-slate-200 opacity-85 h-52"
+            : "pt-1 items-center"
+        } w-full z-20 ${
           scrolled ? "bg-slate-100" : "bg-transparent"
-        } hover:cursor-pointer`}
+        } hover:cursor-pointer ${phoneActive && !showModel && "h-16"}`}
       >
         <h1
           className="text-2xl font-bold ml-7"
@@ -30,7 +43,22 @@ const Header = ({ handleNavigation }) => {
         >
           Rajat
         </h1>
-        <ul className="flex m-4 font-thin text-lg">
+        <ul
+          className="flex m-4 font-thin text-lg"
+          style={
+            phoneActive
+              ? {
+                  position: "fixed",
+                  top: showModel ? "1rem" : "-20rem",
+                  transition: "all 0.5s",
+                  marginTop: "3rem",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "8px",
+                }
+              : {}
+          }
+        >
           <li className="mx-2" onClick={() => handleNavigation("project")}>
             Projects
           </li>
@@ -49,6 +77,14 @@ const Header = ({ handleNavigation }) => {
             Skills
           </li>
         </ul>
+        {phoneActive && (
+          <button
+            className="absolute right-8 text-2xl pt-2"
+            onClick={() => setShowModel((prev) => !prev)}
+          >
+            <GiHamburgerMenu />
+          </button>
+        )}
       </div>
     </>
   );

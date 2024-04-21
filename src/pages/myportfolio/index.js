@@ -8,7 +8,6 @@ import Projects from "@/components/projects/Projects";
 import Skills from "@/components/skills/Skills";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import classes from "../../styles/index.module.css";
 
 const index = () => {
   const router = useRouter();
